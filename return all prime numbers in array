@@ -1,0 +1,13 @@
+function getAllPrimeNumber(array, num) {
+    array = new Array();
+        for (var i = 2; i <= num; i++) {
+            for(var j = 2; j < i; j++){
+                if(i % j==0){break; }
+                array.push(i);
+            }
+
+        }
+    return array;
+}
+console.log(getAllPrimeNumber([], 5)); 
+console.log(getAllPrimeNumber([], 9));
