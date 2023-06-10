@@ -1,0 +1,6 @@
+const arun=[6,8,9,5,4];
+const add=arun.reduce((sum,curr)=>sum+curr);
+console.log([add]);
+//output:
+vscode\tempCodeRunnerFile.js"
+[ 32 ]
