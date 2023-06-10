@@ -1,0 +1,18 @@
+( function(){
+const amarArray = [1, 1, 2, 3, 4, 5, 5]
+
+const amarArrayWithoutDuplicates = [...new Set(amarArray)]
+
+let duplicates = [...amarArray]
+amarArrayWithoutDuplicates.forEach((item) => {
+  const i = duplicates.indexOf(item)
+  duplicates = duplicates
+    .slice(0, i)
+    .concat(duplicates.slice(i + 1, duplicates.length))
+})
+
+console.log(duplicates);
+}) () ;
+
+output:
+[1,5]
