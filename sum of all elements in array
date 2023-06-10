@@ -1,0 +1,43 @@
+// sum of array in loop method
+let arr = [4, 8, 7, 13, 12]
+
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+ 
+console.log("Sum is " + sum)
+
+//JavaScript forEach() Method: 
+let arr = [4, 8, 7, 13, 12]
+
+let sum = 0;
+
+arr.forEach(x => {
+    sum += x;
+});
+console.log("Sum is " + sum);
+
+//JavaScript reduce() Method
+
+let arr = [4, 8, 7, 13, 12
+
+let sum = arr.reduce(function (x, y) {
+    return x + y;
+}, 0);
+
+console.log("Sum using Reduce method: " + sum);
+
+// Function to find the sum of the array using recursion
+
+let arr = [4, 8, 7, 13, 12];
+ 
+function sumArray(arr, index) {
+    if (index === arr.length) {
+        return 0;
+    }
+    return arr[index] + sumArray(arr, index + 1);
+}
+ 
+console.log("Sum is " + sumArray(arr, 0));
